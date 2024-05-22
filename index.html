@@ -22,6 +22,8 @@
     />
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet"> -->
+
     <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
@@ -34,6 +36,9 @@
   </head>
 
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <script src="./js/hide.js" defer></script>
+    <!-- <script src="./js/hideQ.js" defer></script> -->
+
     <div class="site-wrap" id="home-section">
       <div class="site-mobile-menu site-navbar-target">
         <div class="site-mobile-menu-header">
@@ -118,37 +123,7 @@
                 Got a project in mind? Get a personalized quote today and start
                 building your dreams!
               </strong>
-
-              <!-- <p class="mt-5">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim
-                maiores mollitia qui quam labore hic asperiores provident maxime
-                earum eum.
-              </p> -->
             </div>
-            <!-- <div class="col-md-5 mt-2 ml-5">
-              <strong class="h4 line-bottom mt-0 mb-3">
-                Get the best prices on top-notch construction and design at
-                unbeatable rates.
-              </strong>
-            </div> -->
-            <!-- <div class="col-md-6">
-            <div class="quick-contact-form bg-white">
-                <h2>Get Quotation</h2>
-                <form action="#" method="">
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Name">
-                  </div>
-                  <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Email">
-                  </div>
-                  <div class="form-group">
-                    <textarea name="" class="form-control" id="" cols="30" rows="5" placeholder="Message"></textarea>
-                  </div>
-                  <div class="form-group">
-                    <input type="submit" value="Send Message" class="btn btn-primary px-5">
-                  </div>
-                </form>
-              </div> -->
           </div>
         </div>
       </div>
@@ -231,11 +206,11 @@
                 <img src="./images/land-survey.png" alt="Image" class="" />
               </div>
 
-              <h3><span>Surveying</span></h3>
+              <h3><span>Layout</span></h3>
               <p>
-                Offering superior surveying services for both commercial and
-                residential buildings, ensuring precision, accuracy, and
-                reliable results every time.
+                Unlock the potential of your space with our expert layout
+                services, where design meets functionality for a harmonious
+                living experience
               </p>
             </div>
           </div>
@@ -244,8 +219,8 @@
     </div>
 
     <div class="site-section">
-      <div class="container ">
-        <div class="row ">
+      <div class="container">
+        <div class="row">
           <div class="col-md-4 mr-auto">
             <h2 class="line-bottom">We Are Leader In Modern Construction</h2>
           </div>
@@ -264,18 +239,20 @@
                 role="tab"
                 aria-controls="nav-one"
                 aria-selected="true"
+                id="showLink"
                 >Technology</a
               >
               <a
                 href="#nav-two"
-                class="nav-item nav-link active"
+                class="nav-item nav-link"
                 data-toggle="tab"
                 role="tab"
                 aria-controls="nav-two"
-                aria-selected="false"
+                aria-selected="true"
+                id="showQ"
                 >Quality</a
               >
-              <a
+              <!-- <a
                 href="#nav-three"
                 class="nav-item nav-link"
                 data-toggle="tab"
@@ -283,14 +260,14 @@
                 aria-controls="nav-three"
                 aria-selected="false"
                 >Staff</a
-              >
+              > -->
             </nav>
           </div>
         </div>
         <div class="row">
-          <div class="col-12 ">
+          <div class="col-12 mt-2">
             <div class="tab-content" id="nav-tabContent">
-              <div class="row">
+              <div class="row" id="invisible">
                 <div class="col-md-6">
                   <img
                     src="./images/tech.jpg"
@@ -304,15 +281,14 @@
                   <p>
                     We're at the forefront of revolutionizing construction in
                     India with cutting-edge technology. From project management
-                    systems to site surveys, and from 3D printing of building
-                    components for precise planning and execution, we leverage
-                    the latest innovations to deliver unparalleled efficiency
-                    and sustainability in every project.
+                    systems to site surveys, and precise planning and execution,
+                    we leverage the latest innovations to deliver unparalleled
+                    efficiency and sustainability in every project.
                   </p>
                 </div>
               </div>
 
-              <div class="row mt-5 ">
+              <div class="row mt-5 d-none" id="invisibleQ">
                 <div class="col-md-6">
                   <img
                     src="./images/main-quality.webp"
@@ -338,49 +314,9 @@
       </div>
     </div>
 
-    <!-- <div class="site-section bg-light">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md-4 mx-auto">
-            <h2 class="line-bottom text-center">Testimonials</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="testimonial-3">
-              <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure id accusantium similique temporibus nihil blanditiis adipisci aperiam, sapiente suscipit vero.</blockquote>
-              <div class="vcard d-flex align-items-center">
-                <div class="img-wrap mr-3">
-                  <img src="images/person_1.jpg" alt="Image" class="img-fluid">
-                </div>
-                <div>
-                  <span class="d-block">John Smith</span>
-                  <span class="position">Client From Facebook</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="testimonial-3">
-              <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure id accusantium similique temporibus nihil blanditiis adipisci aperiam, sapiente suscipit vero.</blockquote>
-              <div class="vcard d-flex align-items-center">
-                <div class="img-wrap mr-3">
-                  <img src="images/person_2.jpg" alt="Image" class="img-fluid">
-                </div>
-                <div>
-                  <span class="d-block">John Smith</span>
-                  <span class="position">Client From Facebook</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
     <div class="site-section">
       <div class="container">
-        <div class="row mb-4">
+        <div class="row mb-4" id="section1">
           <div class="col-md-4 mx-auto">
             <h2 class="line-bottom text-center">Our Projects</h2>
           </div>
@@ -406,7 +342,7 @@
 
           <div class="col-md-6 mb-5 mb-lg-5 col-lg-4">
             <div class="project-item">
-              <img src="images/project-img 2.jpg" alt="Image" class="project" />
+              <img src="./images/service-2.jpg" alt="Image" class="project" />
 
               <div class="project-item-overlay">
                 <a class="category" href="#">Enquiry</a>
@@ -492,7 +428,7 @@
       </div>
     </div>
 
-    <!-- <div class="site-section">
+    <div class="site-section">
       <div class="container">
         <div class="row mb-4">
           <div class="col-md-4 mx-auto">
@@ -509,16 +445,14 @@
               <div class="post-entry-1-contents">
                 <h2>
                   <a href="single.html"
-                    >We Are Leader In The Construction World</a
+                    >We Are Leader In The Modern Construction</a
                   >
                 </h2>
-                <span class="meta d-inline-block mb-3"
-                  >July 17, 2019 <span class="mx-2">by</span>
-                  <a href="#">Admin</a></span
-                >
+
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Dolores eos soluta, dolore harum molestias consectetur.
+                  Crafting captivating exteriors within your budget, we merge
+                  design brilliance with affordability for your dream space to
+                  come to life.
                 </p>
               </div>
             </div>
@@ -530,17 +464,13 @@
               </a>
               <div class="post-entry-1-contents">
                 <h2>
-                  <a href="single.html"
-                    >We Are Leader In The Construction World</a
-                  >
+                  <a href="single.html">We Are Leader In Eco-buildings</a>
                 </h2>
-                <span class="meta d-inline-block mb-3"
-                  >July 17, 2019 <span class="mx-2">by</span>
-                  <a href="#">Admin</a></span
-                >
+               
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Dolores eos soluta, dolore harum molestias consectetur.
+                  Transforming spaces eco-friendly building approach integrates
+                  cutting-edge green technologies and renewable materials to
+                  create best structures.
                 </p>
               </div>
             </div>
@@ -554,23 +484,97 @@
               <div class="post-entry-1-contents">
                 <h2>
                   <a href="single.html"
-                    >We Are Leader In The Construction World</a
+                    >We Are Leader In The Multi-floor building</a
                   >
                 </h2>
-                <span class="meta d-inline-block mb-3"
+               
+                <p>
+                  Building dreams from ground up, offering cost-effective
+                  solutions for both single-floor and multi-floor constructions
+                  without compromising quality.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="post-entry-1 h-100">
+              <a href="single.html">
+                <img
+                  src="./images/Interior-1.jpg"
+                  alt="Image"
+                  class="project"
+                />
+              </a>
+              <div class="post-entry-1-contents">
+                <h2>
+                  <a href="single.html">We Are Best at Modern Interior</a>
+                </h2>
+                <!-- <span class="meta d-inline-block mb-3"
                   >July 17, 2019 <span class="mx-2">by</span>
                   <a href="#">Admin</a></span
-                >
+                > -->
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Dolores eos soluta, dolore harum molestias consectetur.
+                  Crafting captivating entrance interiors tailored to your
+                  vision, ensuring each detail reflects your unique style and
+                  personality with precision and expertise.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="post-entry-1 h-100">
+              <a href="single.html">
+                <img
+                  src="./images/interior-2.jpg"
+                  alt="Image"
+                  class="project"
+                />
+              </a>
+              <div class="post-entry-1-contents">
+                <h2>
+                  <a href="single.html"
+                    >We are Best at Open Dining hall design</a
+                  >
+                </h2>
+               
+                <p>
+                  Specializing in dining hall interior design and construction,
+                  we deliver bespoke solutions that combine aesthetic appeal
+                  with practical functionality
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="post-entry-1 h-100">
+              <a href="single.html">
+                <img
+                  src="./images/interior-3.jpg"
+                  alt="Image"
+                  class="project"
+                />
+              </a>
+              <div class="post-entry-1-contents">
+                <h2>
+                  <a href="single.html"
+                    >Our best affordable living hall crafting</a
+                  >
+                </h2>
+                
+                <p>
+                  Transform your living hall with our custom interior design
+                  services, followed by flawless construction to achieve your
+                  dream space.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
 
     <div class="row m-4">
       <div class="col-sm-6">
@@ -642,9 +646,9 @@
               <div class="col-lg-4">
                 <h2 class="footer-heading mb-4">Quick Links</h2>
                 <ul class="list-unstyled text-white">
-                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="#home-section">Home</a></li>
                   <li><a href="./about.html">About Us</a></li>
-                  <li><a href="./services.html">Projects</a></li>
+                  <li><a href="#section1">Projects</a></li>
                   <li><a href="#">Privacy</a></li>
                   <li><a href="./contact.html">Contact Us</a></li>
                 </ul>
@@ -667,7 +671,7 @@
           <div class="col-md-12">
             <div class="border-top pt-5">
               <p>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+               
                 Copyright &copy;
                 <script>
                   document.write(new Date().getFullYear());
@@ -677,7 +681,7 @@
                 <a href="https://skyxdigisolutions.com" target="_blank"
                   >SkyX Digi solutions.</a
                 >
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+               
               </p>
             </div>
           </div>
